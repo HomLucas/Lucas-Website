@@ -2,56 +2,96 @@
 
 <html>
 <head>
-<title>My Webpage</title>
+<title>Lucas's Website</title>
+<style>
+a:hover   {color:#ff0000; background-color:transparent; text-decoration:underline}
+h1{
+	font-family: verdana;
+}
+table,th,td{
+	border:1px solid blue;
+	background-color: #FFFFCC;
+}
+th,td{
+	padding:20px;
+}
+.languages{
+	padding:10px;
+	margin:10px;
+}
+#header{
+	text-align: center;
+	padding:5px;
+}
+#side{
+	width:300px;
+	float:left;
+}
+
+#skills{
+	float:left;
+
+}
+</style>
 </head>
 
 <body>
 
-<a href="https://github.com/HomLucas"><img src="http://i.imgur.com/C3CKHh5.jpg" alt="image not displaying"><a/>
-
-<br/>Page written with html
+<div id="header">
 <h1> Welcome to my Webpage!!! </h1>
-
-<a href="mailto:homlucas@gmail.com">Send me an email!</a><br/><br/>
-
-<p> This is going to contain the first link <br/> 
-<a href="https://github.com/HomLucas" title="I know you want to click">Link to my GitHub! </a>
-</p>
 <!-- links to parse to sections of site -->
-<a href="#aboutme"> Find out who I am </a>
-
-<!-- first paragraph with header -->
-
-<p> Filler Filler Filler FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller FillerFiller Filler</p>
-
-
-<table border="1">
+<table>
 	<tr>
 		<th>Contact Me</th>
 		<th>What I've done</th>
 		<th>About Me</th>
+		<th>Languages</th>
 	</tr>
 	<tr>
 		<td><a href="mailto:homlucas@gmail.com">Send me an email!</a></td>
-		<td><a href="https://github.com/HomLucas" title="I know you want to click">Link to my GitHub! </a></td>
+		<td><a href="https://github.com/HomLucas" target="_blank" title="I know you want to click">Link to my GitHub! </a></td>
 		<td><a href="#aboutme"> Info about me </a></td>
+		<td><a href="#languages"> My languages</a></td>
 	</tr>
 </table>
+</div>
+<!-- first paragraph with header -->
 
+<div id="side">
+<a href="https://github.com/HomLucas" target="_blank"><img src="http://i.imgur.com/C3CKHh5.jpg" alt="image not displaying" length="200" width="100"><a/>
+
+<br/>Page written with <abbr title="Hyper Text Markup Language">HTML</abbr>, styling done with <abbr title="Cascading Style Sheets">CSS</abbr>
+<pre>
+College: UC Davis
+Hometown: San Francisco,California
+Hobbies: Lifting weights,cardio
+Favorite OS: Mac 
+</pre>
+</div>
+
+<hr/>
+
+<div id="section">
 <h1>About Me!</h1>
 <a id="aboutme">here we are</a>
-<p title="about lucas"> Hi there! My name is Lucas and I'm a college student currently studying computer science!<br/> line was skipped</p>
-
+<p title="about lucas"> Hi there! My name is Lucas and I'm a college student currently studying computer science!</p>
+</div>
 
 
 <hr /> 
-Insert line break
-<!-- first paragraph with header -->
-<h2>This is just a test2!</h2>
-<p> I am in the body.</p>
-testing a line break <br/> testing <br/>
-<em>fancy etalicized words </em>
 
+<div class ="languages">
+<h2>My languages</h2>
+<a id="languages">languages I know</a>
+<ul style="list-style-type:circle">
+  <li>C++</li>
+  <li>C</li>
+  <li>Java</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Python</li>
+</ul>
+</div>
 
 
  </body>
