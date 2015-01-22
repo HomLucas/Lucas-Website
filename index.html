@@ -3,10 +3,14 @@
 <html>
 <head>
 <title>Lucas's Website</title>
+
 <style>
 a:hover   {color:#ff0000; background-color:transparent; text-decoration:underline}
 h1{
 	font-family: verdana;
+}
+h1#h1one{
+	color:white;
 }
 table,th,td{
 	border:1px solid blue;
@@ -15,30 +19,31 @@ table,th,td{
 th,td{
 	padding:20px;
 }
-.languages{
-	padding:10px;
-	margin:10px;
-}
 #header{
 	text-align: center;
-	padding:5px;
+	padding:30px;
+	background-color: black;
 }
-#side{
+#nav{
 	width:300px;
 	float:left;
+	background-color: grey;
 }
-
-#skills{
+#section{
 	float:left;
-
+	padding:10px;
+	
+	
 }
+
 </style>
+
 </head>
 
 <body>
 
 <div id="header">
-<h1> Welcome to my Webpage!!! </h1>
+<h1 id="h1one"> Welcome to my Webpage!!! </h1>
 <!-- links to parse to sections of site -->
 <table>
 	<tr>
@@ -57,32 +62,28 @@ th,td{
 </div>
 <!-- first paragraph with header -->
 
-<div id="side">
+<div id="nav">
 <a href="https://github.com/HomLucas" target="_blank"><img src="http://i.imgur.com/C3CKHh5.jpg" alt="image not displaying" length="200" width="100"><a/>
-
-<br/>Page written with <abbr title="Hyper Text Markup Language">HTML</abbr>, styling done with <abbr title="Cascading Style Sheets">CSS</abbr>
+<br/>Page written with <abbr title="Hyper Text Markup Language">HTML</abbr>
+<br/>Styling done with <abbr title="Cascading Style Sheets">CSS</abbr>
 <pre>
 College: UC Davis
 Hometown: San Francisco,California
-Hobbies: Lifting weights,cardio
+Hobbies: weightlifting,cycling
 Favorite OS: Mac 
 </pre>
 </div>
 
-<hr/>
-
 <div id="section">
 <h1>About Me!</h1>
-<a id="aboutme">here we are</a>
+<a id="aboutme"></a>
 <p title="about lucas"> Hi there! My name is Lucas and I'm a college student currently studying computer science!</p>
 </div>
 
-
-<hr /> 
-
-<div class ="languages">
+<div id ="section">
+<hr/>
 <h2>My languages</h2>
-<a id="languages">languages I know</a>
+<a id="languages"></a>
 <ul style="list-style-type:circle">
   <li>C++</li>
   <li>C</li>
@@ -92,7 +93,6 @@ Favorite OS: Mac
   <li>Python</li>
 </ul>
 </div>
-
 
  </body>
 </html>
