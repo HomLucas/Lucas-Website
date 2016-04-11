@@ -183,6 +183,12 @@ a:focus {
     }
 }
 
+.image-border {
+  border-width: 2px;
+  border-radius: 50%;
+  width: 137px;
+}
+
 .btn-circle {
     width: 70px;
     height: 70px;
